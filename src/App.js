@@ -21,7 +21,22 @@ function App() {
     <div className="app">
       <Header />
       <Search />
-      {show && <User src={data.avatar_url} />}
+      {show && (
+        <User
+          src={data.avatar_url}
+          name={data.name}
+          login={data.login}
+          joinDate={data.created_at}
+          bio={data.bio}
+          publicRepos={data.public_repos}
+          followers={data.followers}
+          following={data.following}
+          location={data.location}
+          twitter={data.twitter_username}
+          company={data.company}
+          blog={data.blog}
+        />
+      )}
     </div>
   );
 }
