@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/github-user-search-react-app/static/css/main.9c0faca1.css",
-    "main.js": "/github-user-search-react-app/static/js/main.81e860e3.js",
+    "main.css": "/github-user-search-react-app/static/css/main.9e418ead.css",
+    "main.js": "/github-user-search-react-app/static/js/main.28275ab2.js",
+    "static/media/SpaceMono-Regular.woff": "/github-user-search-react-app/static/media/SpaceMono-Regular.64e807be29154d830c89.woff",
+    "static/media/SpaceMono-Regular.woff2": "/github-user-search-react-app/static/media/SpaceMono-Regular.1833a11edfdf280417f0.woff2",
     "index.html": "/github-user-search-react-app/index.html",
-    "main.9c0faca1.css.map": "/github-user-search-react-app/static/css/main.9c0faca1.css.map",
-    "main.81e860e3.js.map": "/github-user-search-react-app/static/js/main.81e860e3.js.map"
+    "main.9e418ead.css.map": "/github-user-search-react-app/static/css/main.9e418ead.css.map",
+    "main.28275ab2.js.map": "/github-user-search-react-app/static/js/main.28275ab2.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c0faca1.css",
-    "static/js/main.81e860e3.js"
+    "static/css/main.9e418ead.css",
+    "static/js/main.28275ab2.js"
   ]
 }
