@@ -1,10 +1,11 @@
 .app {
-  max-width: 1140px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 144px;
+  padding-top: 50px;
   padding-bottom: 170px;
   background-color: #fefefe;
+  font-family: "Space Mono";
 }
 .header {
   max-width: 730px;
@@ -32,6 +33,7 @@
   line-height: 19.25px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .search-container {
   display: flex;
@@ -66,6 +68,9 @@
   border: none;
   cursor: pointer;
 }
+.search-btn:hover {
+  background-color: #60abff;
+}
 .search-input {
   width: 100%;
   margin-left: 26.78px;
@@ -79,6 +84,9 @@
 }
 .search-input::placeholder {
   color: #4b6a9b;
+}
+#search-input-id::placeholder {
+  color: #fefefe;
 }
 .search-noresult-text {
   color: #f74646;
@@ -131,6 +139,7 @@
   font-weight: 400;
 }
 .user-bio {
+  margin-top: 20px;
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
@@ -143,6 +152,7 @@
   width: 100%;
   max-width: 480px;
   padding: 15px 83px 17px 32px;
+  border-radius: 10px;
 }
 .followers-box-title {
   font-weight: 400;
@@ -155,61 +165,326 @@
   line-height: 32.58px;
 }
 .media-container {
+  max-width: 480px;
   width: 100%;
   margin-top: 37px;
-  max-width: 480px;
 }
 .media-container-top {
   display: flex;
   width: 100%;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 21px;
+  column-gap: 90.12px;
 }
 .media-container-bot {
+  flex-wrap: wrap;
   display: flex;
   width: 100%;
   align-items: center;
+  column-gap: 62px;
 }
 .location-box {
   display: flex;
-  width: 50%;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 182.87px;
 }
 .location-box p {
   padding-left: 19.12px;
-  max-width: 120px;
   font-weight: 400;
   font-size: 15px;
   line-height: 22.22px;
 }
 .twitter-box {
-  width: 50%;
+  width: 100%;
+  max-width: 156px;
   display: flex;
 }
 .twitter-box p {
-  padding-left: 16px;
   font-weight: 400;
   font-size: 15px;
   line-height: 22.22px;
+  padding-left: 16px;
 }
 .github-box {
+  width: 100%;
+  max-width: 211px;
   display: flex;
-  width: 50%;
 }
 .github-box p {
-  padding-left: 16.01px;
-  width: 100%;
-  max-width: 175px;
   font-weight: 400;
+  padding-left: 16.01px;
   font-size: 15px;
   line-height: 22.22px;
 }
 .company-box {
+  width: 100%;
+  max-width: 156px;
   display: flex;
-  width: 50%;
 }
 .company-box p {
   padding-left: 16px;
   font-weight: 400;
   font-size: 15px;
   line-height: 22.22px;
+}
+@media (max-width: 480px) {
+  .app {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-inline: 24px;
+    padding-bottom: 170px;
+    background-color: #fefefe;
+    font-family: "Space Mono";
+  }
+  .header {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38.51px;
+  }
+
+  .theme-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .theme-btn {
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19.25px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    padding: 9.5px 0;
+    padding-left: 32px;
+    padding-right: 10px;
+  }
+  .search-icon {
+    height: 24px;
+    width: 24px;
+  }
+  .search-btn {
+    background-color: #0079ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    height: 50px;
+    width: 100%;
+    max-width: 106px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-btn:hover {
+    background-color: #60abff;
+  }
+  .search-input {
+    width: 100%;
+    margin-left: 26.78px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #4b6a9b;
+    cursor: pointer;
+  }
+  .search-input::placeholder {
+    color: #4b6a9b;
+  }
+  #search-input-id::placeholder {
+    color: #fefefe;
+  }
+  .search-noresult-text {
+    color: #f74646;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.22px;
+    width: 100%;
+    max-width: 92px;
+  }
+  .user-container {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 0px;
+    padding: 32px 24px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  }
+  .user-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+  }
+  .main-info {
+    width: 100%;
+    max-width: 480px;
+  }
+  .user-avatar {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  .user-name {
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 38.51px;
+  }
+  .user-login {
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23.7px;
+  }
+  .user-join-date {
+    position: absolute;
+    top: 130px;
+    right: 110px;
+    font-size: 13px;
+    line-height: 22.22px;
+    font-weight: 400;
+    width: 150px;
+  }
+  .user-bio {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    width: 100%;
+  }
+  .followers-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 375px;
+    padding: 19px 15px;
+    border-radius: 10px;
+  }
+  .followers-box-title {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19.25px;
+  }
+  .followers-box-count {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32.58px;
+  }
+  .media-container {
+    max-width: 480px;
+    width: 100%;
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .media-container-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 120.12px;
+    margin: 0;
+    row-gap: 10px;
+  }
+  .media-container-bot {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .location-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .location-box p {
+    padding-left: 19.12px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.22px;
+  }
+  .twitter-box {
+    width: 100%;
+
+    display: flex;
+  }
+  .twitter-box p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.22px;
+    padding-left: 16px;
+  }
+  .github-box {
+    width: 100%;
+    display: flex;
+  }
+  .github-box p {
+    font-weight: 400;
+    padding-left: 16.01px;
+    font-size: 15px;
+    line-height: 22.22px;
+  }
+  .company-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .company-box p {
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.22px;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .user-join-date {
+    position: absolute;
+    top: 130px;
+    right: 60px;
+    font-size: 13px;
+    line-height: 22.22px;
+    font-weight: 400;
+    width: 150px;
+  }
 }
